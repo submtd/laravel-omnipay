@@ -1,0 +1,26 @@
+{
+    "name": "submtd/laravel-omnipay",
+    "description": "Handle multiple payment gateways in Laravel with Omnipay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve Harmeyer",
+            "email": "harmeyersteve@gmail.com"
+        }
+    ],
+    "require": {
+        "league/omnipay": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Submtd\\LaravelOmnipay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Submtd\\LaravelOmnipay\\Providers\\LaravelOmnipayServiceProvider"
+            ]
+        }
+    }
+}
